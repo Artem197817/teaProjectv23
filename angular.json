@@ -63,6 +63,11 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "docs": {
+              "outputPath": "docs",
+              "baseHref": "/teaProjectv23/",
+
             }
           },
           "defaultConfiguration": "production"
