@@ -6,6 +6,7 @@ declare var $: any;
 
 @Component({
   selector: 'app-main',
+  standalone: false,
   templateUrl: './main.component.html',
   styleUrl: './main.component.less'
 })

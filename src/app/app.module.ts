@@ -5,8 +5,10 @@ import {OrderModule} from './feature/order/order.module';
 import {MainModule} from './feature/main/main.module';
 import {CatalogModule} from './feature/catalog/catalog.module';
 import {SharedModule} from './shared/shared.module';
-import {RouterModule, RouterOutlet} from '@angular/router';
-import {routes} from './app.routes';
+import { AppRoutingModule } from './app-routing.module';
+import {RouterOutlet} from '@angular/router';
+import {HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,12 +18,14 @@ import {routes} from './app.routes';
     MainModule,
     CatalogModule,
     SharedModule,
+    AppRoutingModule,
     RouterOutlet,
-    RouterModule.forRoot(routes)
+    HttpClientModule,
   ],
   providers: [
 
   ],
+  bootstrap: [AppComponent]
 
 })
 export class AppModule { }

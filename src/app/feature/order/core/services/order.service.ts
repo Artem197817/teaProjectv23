@@ -6,7 +6,9 @@ import {OrderResponseType} from '../types/orderResponce.types';
 import {HttpClient} from '@angular/common/http';
 
 
-@Injectable()
+@Injectable({
+  providedIn: 'root',
+})
 export class OrderService {
 
   private url: string = 'https://testologia.ru/order-tea';

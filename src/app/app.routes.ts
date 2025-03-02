@@ -10,7 +10,6 @@ export const routes: Routes = [
   { path: 'catalog', component: CatalogComponent },
   { path: 'product/:id', component: ProductComponent },
   { path: 'order', component: OrderComponent },
-  // { path: '', redirectTo: '/main', pathMatch: 'full' },
   { path: '**', redirectTo: '/main' },
 ];
 

@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {OrderComponent} from './order.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import {AppRoutingModule} from '../../app-routing.module';
+import {OrderService} from './core/services/order.service';
 
 @NgModule({
   declarations: [
@@ -10,6 +12,8 @@ import {ReactiveFormsModule} from '@angular/forms';
   imports: [
     CommonModule,
     ReactiveFormsModule,
+    AppRoutingModule
+
   ],
   providers: [
   ],

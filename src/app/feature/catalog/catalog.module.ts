@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {CatalogComponent} from './catalog.component';
-import {SharedModule} from '../../shared/shared.module';
+import {TruncateTextPipe} from '../../shared/pipes/truncate-text.pipe';
+
 
 
 
@@ -14,7 +15,9 @@ import {SharedModule} from '../../shared/shared.module';
   imports: [
     CommonModule,
     FormsModule,
-    SharedModule,
+    TruncateTextPipe,
+
+
   ],
   providers: [
 

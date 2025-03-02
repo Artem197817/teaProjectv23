@@ -7,6 +7,7 @@ import {OrderService} from './core/services/order.service';
 
 @Component({
   selector: 'app-order',
+  standalone: false,
   templateUrl: './order.component.html',
   styleUrl: './order.component.less'
 })
