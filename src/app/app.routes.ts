@@ -1,8 +1,9 @@
-import { Routes } from '@angular/router';
-import {MainComponent} from './components/main/main.component';
-import {CatalogComponent} from './components/catalog/catalog.component';
-import {ProductComponent} from './components/product/product.component';
-import {OrderComponent} from './components/order/order.component';
+import { Routes} from '@angular/router';
+import {MainComponent} from './feature/main/main.component';
+import {CatalogComponent} from './feature/catalog/catalog.component';
+import {ProductComponent} from './shared/product/product.component';
+import {OrderComponent} from './feature/order/order.component';
+
 
 export const routes: Routes = [
   { path: '', component: MainComponent },
@@ -12,3 +13,4 @@ export const routes: Routes = [
   // { path: '', redirectTo: '/main', pathMatch: 'full' },
   { path: '**', redirectTo: '/main' },
 ];
+

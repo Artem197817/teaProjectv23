@@ -1,13 +1,12 @@
 import {Injectable} from '@angular/core';
 import {BehaviorSubject, Observable} from 'rxjs';
-import {ProductType} from '../types/productTypes';
-import {HttpClient} from '@angular/common/http';
+import {ProductType} from '../../../../shared/types/productTypes';
 import {OrderFormType} from '../types/orderForm.types';
 import {OrderResponseType} from '../types/orderResponce.types';
+import {HttpClient} from '@angular/common/http';
 
-@Injectable({
-  providedIn: 'root'
-})
+
+@Injectable()
 export class OrderService {
 
   private url: string = 'https://testologia.ru/order-tea';

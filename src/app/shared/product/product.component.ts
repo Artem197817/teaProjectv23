@@ -1,19 +1,13 @@
 import {Component, OnInit} from '@angular/core';
-import {ProductType} from '../../types/productTypes';
-import {ProductService} from '../../services/product.service';
-import {AsyncPipe, NgIf} from '@angular/common';
+import {ProductType} from '../types/productTypes';
+import {ProductService} from '../services/product.service';
 import {ActivatedRoute, Router,} from '@angular/router';
 import {catchError, Observable, of, switchMap} from 'rxjs';
-import {OrderService} from '../../services/order.service';
+import {OrderService} from '../../feature/order/core/services/order.service';
 
 @Component({
   selector: 'app-product',
-  standalone: true,
   templateUrl: './product.component.html',
-  imports: [
-    NgIf,
-    AsyncPipe
-  ],
   styleUrl: './product.component.less'
 })
 export class ProductComponent implements OnInit {

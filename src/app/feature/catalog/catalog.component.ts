@@ -1,22 +1,13 @@
 import {Component, OnDestroy, OnInit, signal} from '@angular/core';
-import {ProductService} from '../../services/product.service';
-import {ProductType} from '../../types/productTypes';
-import {NgForOf} from '@angular/common';
-import {TruncateTextPipe} from '../../pipes/truncate-text.pipe';
+import {ProductService} from '../../shared/services/product.service';
+import {ProductType} from '../../shared/types/productTypes';
 import {Router} from '@angular/router';
-import {FormsModule} from '@angular/forms';
 import {Subscription} from 'rxjs';
 
 
 @Component({
   selector: 'app-catalog',
-  standalone: true,
   templateUrl: './catalog.component.html',
-  imports: [
-    NgForOf,
-    TruncateTextPipe,
-    FormsModule,
-  ],
   styleUrl: './catalog.component.less'
 })
 export class CatalogComponent implements OnInit, OnDestroy {

@@ -1,22 +1,18 @@
 import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
-import {OrderService} from '../../services/order.service';
-import {NgIf} from '@angular/common';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {OrderService} from './core/services/order.service';
+
+
 
 
 @Component({
   selector: 'app-order',
-  standalone: true,
   templateUrl: './order.component.html',
-  imports: [
-    ReactiveFormsModule,
-    NgIf
-  ],
   styleUrl: './order.component.less'
 })
 export class OrderComponent implements OnInit {
 
-  protected orderForm: FormGroup;
+  protected orderForm!: FormGroup;
   protected isShowForm: boolean = true;
   protected isShowMessage: boolean = false;
   protected isShowError: boolean = false;

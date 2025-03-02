@@ -1,6 +1,4 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {RouterLink} from '@angular/router';
-import {NgClass} from '@angular/common';
 import {Subscription, timer} from 'rxjs';
 
 
@@ -8,12 +6,7 @@ declare var $: any;
 
 @Component({
   selector: 'app-main',
-  standalone: true,
   templateUrl: './main.component.html',
-  imports: [
-    RouterLink,
-    NgClass
-  ],
   styleUrl: './main.component.less'
 })
 export class MainComponent implements OnInit, OnDestroy {
