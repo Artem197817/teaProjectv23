@@ -8,6 +8,7 @@ import {SharedModule} from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import {RouterOutlet} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import {HttpClientModule} from '@angular/common/http';
     AppRoutingModule,
     RouterOutlet,
     HttpClientModule,
+    BrowserAnimationsModule,
   ],
   providers: [
 
